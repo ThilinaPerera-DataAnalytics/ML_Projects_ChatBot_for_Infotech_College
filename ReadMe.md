@@ -1,4 +1,4 @@
-# 🤖 Developing a ChatBot for InfoTech College of Business and IT
+# 🤖 Developing a ChatBot for InfoTech College of Business and IT Website
 
 
 ```
@@ -8,8 +8,7 @@ Infotech College of Business & IT
 ```
 ![alt text](cover_image.png)
 
-A Retrieval-Augmented Generation (RAG) powered chatbot built for Infotech College
-, enabling students and visitors to ask questions about courses, admissions, campus life, and more.
+A Retrieval-Augmented Generation (RAG) powered chatbot built for Infotech College Website, enabling students and visitors to ask questions about courses, admissions, campus life, and more.
 
 This project showcases practical use of **Large Language Models (LLMs)**, **Vector Databases**, and **Retrieval-Augmented Generation** to build a domain-specific assistant.
 
@@ -32,37 +31,42 @@ This project showcases practical use of **Large Language Models (LLMs)**, **Vect
 
 ```
 ML_Projects_ChatBot_for_Infotech_College/
-│── 1_data/                  # PDF documents (college info, about us, admissions, etc.)
+│── 1_data/                     # PDF documents
 |
 │── 2_src/
 │   ├── 1_chatbot/
-│   │   ├── doc_load.py       # Load PDFs
-│   │   ├── doc_split.py      # Split into chunks
-│   │   ├── get_vectorstore.py # Create & save embeddings
-│   │   ├── integrate_llm.py   # Connect to Ollama LLM
-│   │   ├── build_rag.py       # RAG pipeline
-│   │   ├── clean.py           # Strip unwanted LLM text
-│   │   ├── chat_interactive.py # CLI chatbot
-│   │   └── open_chatbot.py     # Final chatbot entrypoint
+│   │   ├── doc_load.py         # Load PDFs
+│   │   ├── doc_split.py        # Split into chunks
+│   │   ├── get_vectorstore.py  # Create & save embeddings
+│   │   ├── integrate_llm.py    # Connect to Ollama LLM
+│   │   ├── build_rag.py        # RAG pipeline
+│   │   ├── clean.py            # Strip unwanted LLM text
+│   │   └── chat_interactive.py # CLI chatbot
+│   │   
 │   └── 2_frontend/
-│      └── frontend.py        # Streamlit interface (optional)
+│      └── frontend.py          # Streamlit interface (optional)
 │
+│── open_chatbot.py             # Final chatbot entrypoint
+|
 │── .git/
-│── chromadb/
+│── chromadb/                   # Vector database
 │
-│── requirements.txt
-│── README.md
+│── requirements.txt            # Dependencies
+│── README.md                   # Project documentation
 └── cover_image.png
 ```
 
+---
+
 ## 🛠️ Tech Stack
 
-* **Python 3.11**
-* **LangChain** (RAG pipeline & integrations)
-* **ChromaDB** (vector database)
-* **Ollama** (local LLMs: DeepSeek-r1)
-* **HuggingFace Sentence Transformers** (`all-MiniLM-L6-v2` for embeddings)
-* **Streamlit** (UI)
+* Language: **Python 3.11**
+* RAG pipeline & integrations: **LangChain**
+* Vector database: **ChromaDB**
+* Local LLM integration: **Ollama + DeepSeek-r1 : 1.5B model**
+* Embeddings: **HuggingFace Sentence Transformers `all-MiniLM-L6-v2`**
+* UI: **Streamlit**
+* IDE: **Visual Studio Code + Anaconda Distribution**
 
 ---
 
@@ -90,9 +94,9 @@ pip install -r requirements.txt
 
 ### 4. Setup Ollama & models
 
+```bash
 Install Ollama → [ollama.com](https://ollama.com/)
 
-```bash
 ollama pull deepseek-r1:1.5b
 ```
 
@@ -110,6 +114,9 @@ python 2_src/1_chatbot/get_vectorstore.py
 
 # Run chatbot interactively
 python 2_src/1_chatbot/chat_interactive.py
+
+# Run final chatbot
+python open_chatbot.py
 ```
 
 ### 6. Run Streamlit UI
@@ -135,10 +142,11 @@ Then open: [http://localhost:8501](http://localhost:8501)
 
 ---
 
-## 📊 Performance
+## 📊 Performance comparison (with ollama + mistral)
+### (Lenovo T530 + Samsung EVO 870 SSD 512GB + Kingston DDR3 8GB x 2 + Integrated Graphics)
 
-* **Mistral (7.3B)** → \~200 sec response time (on Lenovo T530)
-* **DeepSeek-r1 (1.5B)** → \~60 sec response time (chosen for final chatbot)
+* **Mistral (7.3B)** → ~200 sec response time
+* **DeepSeek-r1 (1.5B)** → ~60 sec response time (chosen for final chatbot)
 * **Vector store size** → 63 embeddings across 39 documents
 
 ---
@@ -151,15 +159,37 @@ Then open: [http://localhost:8501](http://localhost:8501)
 
 ---
 
-## 📌 Next Steps
+## 🚀 Future Development
 
+The current version of the Infotech College Virtual Assistant delivers core RAG-based Q&A with document retrieval and a clean Streamlit interface. Future improvements will focus on expanding both functionality and user experience, including:
 
+* **Multimodal Support**: Allow the chatbot to handle not just text but also images, PDFs, and video transcripts for richer responses.
 
+* **Chat History & Memory**: Persist conversations across sessions, enabling follow-up questions and more natural dialog.
 
-## 🤝 Contributing
+* **Admin Dashboard**: Provide college staff with insights on frequently asked questions, student trends, and analytics.
 
-Contributions are welcome! Please fork the repo and submit a pull request with improvements.
+* **Multi-Language Support**: Integrate Sinhala and Tamil responses alongside English for accessibility.
 
+* **Deployment at Scale**: Host the chatbot on a secure cloud platform (AWS / Azure / GCP) with API endpoints for web and mobile.
+
+* **Voice Interface**: Enable speech-to-text and text-to-speech for students who prefer a voice-driven guide.
+
+* **Integration with College Systems**: Connect to CRM/ERP for real-time admission updates, course schedules, and event announcements.
+
+---
+
+## 🙏 Acknowledgements
+
+This project was made possible through the support and resources provided by **Infotech College for Business & IT**.
+
+Special thanks to:
+
+* **The Lecturer Mr. Akshan Bandara** for guidance & **Infotech College staff** for resource material.
+* The **open-source community** behind tools like [LangChain](https://www.langchain.com/), [Streamlit](https://streamlit.io/), [ChromaDB](https://www.trychroma.com/), and [Ollama](https://ollama.ai/) which power the backbone of this chatbot.
+* **Hugging Face** for providing accessible state-of-the-art embedding models.
+
+---
 
 ## 👨‍💻 Author
 
@@ -171,13 +201,9 @@ Contributions are welcome! Please fork the repo and submit a pull request with i
 
 ---
 
-## ⭐ Acknowledgement
-    *
+## 🤝 Contributing
 
+Contributions are welcome! Please fork the repo and submit a pull request with improvements.
 
-
-✨ If you like this project, don’t forget to **star ⭐ the repo**!
-
-
-
+✨ If you like this project, don’t forget to **star ⭐ the repo**..!
 
