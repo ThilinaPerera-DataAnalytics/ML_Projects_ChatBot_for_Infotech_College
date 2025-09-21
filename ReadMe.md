@@ -6,7 +6,7 @@ Individual Project 03
 Machine Learning with Advanced Python
 Infotech College of Business & IT
 ```
-![alt text](cover_image.png)
+![alt text](image.png)
 
 A Retrieval-Augmented Generation (RAG) powered chatbot built for Infotech College Website, enabling students and visitors to ask questions about courses, admissions, campus life, and more.
 
