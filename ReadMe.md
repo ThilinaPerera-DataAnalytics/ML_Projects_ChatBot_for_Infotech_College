@@ -145,8 +145,8 @@ Then open: [http://localhost:8501](http://localhost:8501)
 
 ---
 
-## 📊 Performance comparison (with ollama + mistral)
-### (Lenovo T530 + Samsung EVO 870 SSD 512GB + Kingston DDR3 8GB x 2 + Integrated Graphics)
+## 📊 Performance Comparison (Head-to-Head with ollama + mistral)
+<font size='5'>(Lenovo T530 + Samsung EVO 870 SSD 512GB + Kingston DDR3 8GB x 2 + NVIDIA NVS 5400M)</font>
 
 * **Mistral (7.3B)** → ~200 sec response time
 * **DeepSeek-r1 (1.5B)** → ~60 sec response time (chosen for final chatbot)
