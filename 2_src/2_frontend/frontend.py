@@ -31,7 +31,7 @@ build_rag = build_rag.build_rag
 # Streamlit UI
 # ------------------------------
 st.set_page_config(page_title="Infotech College Digital Guide", layout="centered")
-st.title("🏫 InfoTech College - Business/ IT 🎓\nVirtual Assistance Service")
+st.title("🏫 InfoTech College - Business & IT\nVirtual Assistance Service")
 
 # ------------------------------
 # Initialize QA chain
