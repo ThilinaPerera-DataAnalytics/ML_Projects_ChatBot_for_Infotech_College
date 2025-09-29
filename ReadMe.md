@@ -129,9 +129,9 @@ Then open: [http://localhost:8501](http://localhost:8501)
 
 ---
 ![alt text](streamlit_UI.png)
-
-<font size='3'>*Streamlit Chat UI*</font>
-
+```
+<font size='5'>*Streamlit Chat UI*</font>
+```
 ---
 
 ## 💡 Example Queries
