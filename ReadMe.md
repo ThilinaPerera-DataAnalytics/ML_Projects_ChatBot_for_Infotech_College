@@ -129,26 +129,27 @@ Then open: [http://localhost:8501](http://localhost:8501)
 
 ---
 ![alt text](streamlit_UI.png)
-```
-<font size='5'>*Streamlit Chat UI*</font>
-```
+
+<font size='3'>*Streamlit Chat UI*</font>
+
 ---
 
 ## 💡 Example Queries
 
 **Q:** *How can I enroll at Infotech College?*
-**A:** Visit [Enrollment Page](https://www.infotechcollege.com/enrollment/). Payment options include monthly installments, full payment, or smaller installment fees.
+<br>**A:** Visit [Enrollment Page](https://www.infotechcollege.com/enrollment/). Payment options include monthly installments, full payment, or smaller installment fees.
 
 **Q:** *What courses are offered?*
-**A:** Foundation in Information Technology (FIT) program, recognized by the University of Colombo School of Computing (UCSC), plus other IT-focused offerings.
+<br>**A:** Foundation in Information Technology (FIT) program, recognized by the University of Colombo School of Computing (UCSC), plus other IT-focused offerings.
 
 **Q:** *Can I study medicine there?*
-**A:** Infotech College specializes in IT & AI programs, not medicine.
+<br>**A:** Infotech College specializes in IT & AI programs, not medicine.
 
 ---
 
 ## 📊 Performance Comparison (Head-to-Head with ollama + mistral)
-<font size='5'>(Lenovo T530 + Samsung EVO 870 SSD 512GB + Kingston DDR3 8GB x 2 + NVIDIA NVS 5400M)</font>
+
+<font size='4'>(Lenovo T530 i7 quad core + Samsung SSD EVO 870 512GB + Kingston DDR3 8GB x 2 + NVIDIA NVS 5400M)</font>
 
 * **Mistral (7.3B)** → ~200 sec response time
 * **DeepSeek-r1 (1.5B)** → ~60 sec response time (chosen for final chatbot)
@@ -186,23 +187,23 @@ The current version of the Infotech College Virtual Assistant delivers core RAG-
 
 ## 🙏 Acknowledgements
 
-This project was made possible through the support and resources provided by **Infotech College for Business & IT**.
-
-Special thanks to:
-
-* **The Lecturer Mr. Akshan Bandara** for guidance & **Infotech College staff** for resource material.
+* Lecturer **Mr. Akshan Bandara** for guidance & **Infotech College staff** for resource material.
 * The **open-source community** behind tools like [LangChain](https://www.langchain.com/), [Streamlit](https://streamlit.io/), [ChromaDB](https://www.trychroma.com/), and [Ollama](https://ollama.ai/) which power the backbone of this chatbot.
 * **Hugging Face** for providing accessible state-of-the-art embedding models.
 
 ---
 
-## 👨‍💻 Author
+### 👨‍💻 Author
+**Thilina Perera/ Data with TP**
+```
+📌 Data Science/ Data Analytics
+📌 Machine Learning, Deep Learning, LLM/LMM, NLP, and Automated Data Pipelines Explorer
+``` 
+🔍 [LinkedIn](https://www.linkedin.com/in/thilina-perera-148aa934/) | 🔍 [GitHub](https://github.com/ThilinaPerera-DataAnalytics) | 🔍 [YouTube](https://www.youtube.com/@Data_with_TP)
 
-**Thilina Perera**
-
-    📌 Data Analytics Enthusiast | Machine Learning, Deep Learning, LLM/ LMM & NLP Explorer
-
-🔗 [LinkedIn](https://www.linkedin.com/in/thilina-perera-148aa934/) | [GitHub](https://github.com/ThilinaPerera-DataAnalytics)
+### 🏆 License
+    This project is licensed under the MIT License – free to use and extend.
+---
 
 ---
 
