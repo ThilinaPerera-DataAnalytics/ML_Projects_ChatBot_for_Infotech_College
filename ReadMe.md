@@ -205,8 +205,6 @@ The current version of the Infotech College Virtual Assistant delivers core RAG-
     This project is licensed under the MIT License – free to use and extend.
 ---
 
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please fork the repo and submit a pull request with improvements.
